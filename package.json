@@ -9,5 +9,8 @@
   "dependencies": {
     "bulma": "^0.4.0",
     "elm-live": "^2.7.4"
+  },
+  "scripts": {
+    "dev": "node_modules/elm-live/bin/elm-live.js src/Main.elm --output=elm.js --open"
   }
 }
