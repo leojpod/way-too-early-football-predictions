@@ -4,3 +4,7 @@ elm-stuff/
 repl-temp-*
 # elm-live generated files
 elm.js
+
+
+# node.js stuff
+node_modules

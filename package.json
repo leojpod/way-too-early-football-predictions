@@ -1,0 +1,13 @@
+{
+  "name": "way-too-early-football-predictions",
+  "version": "0.0.0",
+  "description": "a simple app to play around with elm-routing and to have fun in the process",
+  "main": "elm.js",
+  "repository": "git@github.com:leojpod/way-too-early-football-predictions.git",
+  "author": "Leo jPod <leo.jpod@gmail.com>",
+  "license": "DBAD",
+  "dependencies": {
+    "bulma": "^0.4.0",
+    "elm-live": "^2.7.4"
+  }
+}
