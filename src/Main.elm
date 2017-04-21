@@ -3,11 +3,14 @@ module Main exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import BulmaClasses exposing (..)
+import Navigation
 
 
 -- local imports
 
-import Routes.Home.View exposing (home)
+import Types exposing (Model, Msg(..))
+import State exposing (init, update, subscriptions)
+import View exposing (view)
 
 
 menu : Html msg
@@ -36,6 +39,11 @@ menu =
         ]
 
 
-main : Html msg
+main : Program Never Model Msg
 main =
-    home
+    Navigation.program OnLocationChange
+        { init = init
+        , view = view
+        , update = update
+        , subscriptions = subscriptions
+        }
